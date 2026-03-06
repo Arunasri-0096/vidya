@@ -1,0 +1,98 @@
+pipeline {
+    agent any
+
+    stages {
+
+        stage('Git Checkout') {
+            steps {
+                git 'https://github.com/Arunasri-0096/onlinebookstore.git'
+            }
+        }
+
+        stage('Build') {
+            steps {
+                sh 'mvn validate'
+        }
+    }
+            stage('compile') {
+                steps {
+                    sh 'mvn compile'
+                }
+            }
+            stage('test') {
+                steps {
+                    sh 'mvn test'
+                }
+            }
+            stage('package') {
+                steps {
+                    sh 'mvn package'
+                }
+            }
+        }
+    }pipeline {
+    agent any
+
+    stages {
+
+        stage('Git Checkout') {
+            steps {
+                git 'https://github.com/Arunasri-0096/onlinebookstore.git'
+            }
+        }
+
+        stage('Build') {
+            steps {
+                sh 'mvn validate'
+        }
+    }
+            stage('compile') {
+                steps {
+                    sh 'mvn compile'
+                }
+            }
+            stage('test') {
+                steps {
+                    sh 'mvn test'
+                }
+            }
+            stage('package') {
+                steps {
+                    sh 'mvn package'
+                }
+            }
+        }
+    }pipeline {
+    agent any
+
+    stages {
+
+        stage('Git Checkout') {
+            steps {
+                git 'https://github.com/Arunasri-0096/onlinebookstore.git'
+            }
+        }
+
+        stage('Build') {
+            steps {
+                sh 'mvn validate'
+        }
+    }
+            stage('compile') {
+                steps {
+                    sh 'mvn compile'
+                }
+            }
+            stage('test') {
+                steps {
+                    sh 'mvn test'
+                }
+            }
+            stage('package') {
+                steps {
+                    sh 'mvn package'
+                }
+            }
+        }
+    }
+
